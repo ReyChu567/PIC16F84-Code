@@ -1,0 +1,32 @@
+Steps on How to Run the Code
+
+1. Clock
+- change input values in tb file
+	- vdd
+	- vss
+	- mclr
+
+Step 1: iverilog -o pic16f84_clock.vvp pic16f84_clock_tb.v
+
+Step 2: vvp pic16f84_clock.vvp  
+
+Step 3: gtkwave
+
+
+2. Cpu 
+- change values in .v and tb file
+
+Step 1: iverilog -o pic16f84_cpu.vvp pic16f84_cpu_tb.v
+
+Step 2: vvp pic16f84_cpu.vvp
+
+Step 3: gtkwave
+
+
+3. ROM
+
+Step 1: iverilog -o pic16f84_x1_rom_tb.vvp pic16f84_x1_rom_tb.v pic16f84_x1_rom.v
+
+Step 2: vvp pic16f84_x1_rom_tb.vvp
+
+Step 3: gtkwave
